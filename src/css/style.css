@@ -55,8 +55,67 @@ body{
 }
 
 .home .informacoes{
-    background-color: rgb(28, 3, 28);
     position: absolute;
     z-index:1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
 
+.home .informacoes .lista-de-jogos{
+    display: flex;
+    gap:132px;
+
+}
+
+.home .informacoes img{
+    max-width: 150px;
+}
+
+.home .informacoes .texto{
+    font-family:"Chalet";
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-comprar{
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff; 
+    border-radius: 4px;
+    font-family: "Chalet";
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    
+}
+
+.btn-comprar:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all .3s ease-in;
+}
+
+.compre-ja .capa-do-jogo{
+    width: 270px;
+}
+
+.compre-ja{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+.compre-ja .titulo{
+    font-family:'Chalet';
+    font-size: 38px;
+    font-weight:700px;
+    margin-bottom:50px;
 }
